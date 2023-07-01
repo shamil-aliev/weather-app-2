@@ -1,0 +1,32 @@
+.box {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 400px;
+}
+.day,
+.temp,
+.condition {
+  grid-column: 1/2;
+  object-fit: cover;
+}
+.day {
+  font-size: 20px;
+}
+.image-box {
+  width: 100px;
+}
+.img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.highlight {
+  font-weight: 600;
+}

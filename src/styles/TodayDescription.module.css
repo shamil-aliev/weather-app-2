@@ -1,0 +1,42 @@
+.description {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: start;
+  margin-left: 16px;
+}
+
+.temp,
+.wind,
+.max,
+.min {
+  border-bottom: 3px solid #c6edfa;
+  font-weight: 500;
+  font-size: 21px;
+  margin: 8px;
+  display: inline-block;
+  min-width: 225px;
+}
+
+.highlight {
+  font-weight: 600;
+}
+
+@media screen and (min-width: 500px) {
+  .temp,
+  .wind,
+  .max,
+  .min {
+    display: inline-block;
+    min-width: 225px;
+  }
+}
+@media screen and (max-width: 1079px) {
+  .temp,
+  .wind,
+  .max,
+  .min {
+    display: inline-block;
+    min-width: 255px;
+  }
+}

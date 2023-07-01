@@ -1,0 +1,25 @@
+.box {
+  border: 1px solid #999;
+  border-radius: 20px;
+  box-shadow: 0px 0px 13px 4px rgba(75, 75, 75, 0.25);
+  background-color: #edf6f9;
+}
+.time {
+  font-size: 21px;
+  margin: 8px;
+}
+
+.temp {
+  font-size: 21px;
+  margin: 8px;
+}
+
+@media screen and (max-width: 575px) {
+  .temp {
+    /* color: blue; */
+    font-size: 17px;
+  }
+  .time {
+    font-size: 18px;
+  }
+}
