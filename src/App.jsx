@@ -19,7 +19,7 @@ function App() {
     try {
       setLoading(true);
       const res = await fetch(
-        `http://api.weatherapi.com/v1/forecast.json?key=${key}&q=${city}&days=6&aqi=no&alerts=no`
+        `https://api.weatherapi.com/v1/forecast.json?key=${key}&q=${city}&days=6&aqi=no&alerts=no`
       );
       console.log(res);
       if (!res.ok) {

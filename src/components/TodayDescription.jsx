@@ -11,13 +11,13 @@ function TodayDescription({ data }) {
         <span className={styles.highlight}>{data?.current?.gust_kph} k/ph</span>
       </p>
       <p className={styles.max}>
-        Max temperature is:{" "}
+        Max temperature today:{" "}
         <span className={styles.highlight}>
           {data.forecast.forecastday[0].day.maxtemp_c} ℃
         </span>
       </p>
       <p className={styles.min}>
-        Min temperature is:{" "}
+        Min temperature today:{" "}
         <span className={styles.highlight}>
           {data.forecast.forecastday[0].day.mintemp_c} ℃
         </span>
