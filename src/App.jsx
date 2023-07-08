@@ -35,8 +35,8 @@ function App() {
           },
           (error) => {
             console.error("Error getting geolocation:", error);
-            // setError("Error while getting your geolocation");
-            // setLoading(false);
+
+            setLoading(false);
           }
         );
       } else {
