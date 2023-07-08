@@ -92,28 +92,21 @@ function App() {
           className="search"
         />
       </div>
-      <div className="information-box">
-        {error && <ErrorMessage error={error} />}
+      {error && <ErrorMessage error={error} />}
+      {loading && <LoadingSpinner />}
 
-        {loading && <LoadingSpinner />}
-
-        {weatherData && !error && (
-          <Today data={weatherData} loading={loading} />
-        )}
-
-        {weatherData && !error && !loading && (
-          <TodayForecast data={forecastHours} />
-        )}
-
-        {weatherData && !error && !loading && (
-          <TodayDescription data={weatherData} />
-        )}
-      </div>
-      <div className="forecast-box">
-        {weatherData && !error && !loading && (
-          <Forecast data={weatherData.forecast.forecastday.slice(1)} />
-        )}
-      </div>
+      {weatherData && !error && !loading && (
+        <>
+          <div className="information-box">
+            <Today data={weatherData} />
+            <TodayForecast data={forecastHours} />
+            <TodayDescription data={weatherData} />
+          </div>
+          <div className="forecast-box">
+            <Forecast data={weatherData.forecast.forecastday.slice(1)} />
+          </div>
+        </>
+      )}
     </div>
   );
 }
