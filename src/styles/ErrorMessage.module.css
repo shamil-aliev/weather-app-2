@@ -1,0 +1,9 @@
+.message {
+  font-size: 24px;
+  color: orangered;
+  padding: 24px 12px;
+  margin-top: 64px;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+}

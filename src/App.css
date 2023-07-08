@@ -10,19 +10,32 @@
   box-sizing: border-box;
   font-family: "Open Sans";
 }
+ion-icon {
+  color: blue;
+}
+
 .app {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-  background-color: #fff;
+  grid-template-rows: 10% 90%;
+  background-color: #f1f3f5;
 
   width: 100%;
   height: 100vh;
-  gap: 80px;
+  column-gap: 40px;
+  row-gap: 20px;
 }
 
-.search {
-  grid-column: 1 / -1;
+.search-box {
+  grid-column: 1 / 3;
+  /* grid-row: 1/ 2; */
+  margin-bottom: 50px;
 }
-ion-icon {
-  color: blue;
+.information-box {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.forecast-box {
+  grid-row: 2/3;
 }
